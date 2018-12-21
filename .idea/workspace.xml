@@ -37,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cutwords.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cutwords.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cutwords.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="188">
@@ -45,6 +45,25 @@
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dataprocess.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataprocess.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="436">
+              <caret line="94" column="16" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -89,6 +108,9 @@
       <find>epoch_num</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -120,6 +142,7 @@
     <option name="width" value="1326" />
     <option name="height" value="1266" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -145,7 +168,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -305,10 +328,10 @@
     <frame x="-6" y="-6" width="1293" height="703" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49744898" visible="true" weight="0.1805887" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49744898" visible="true" weight="0.1805887" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32976827" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.28241846" side_tool="true" weight="0.52328765" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.28241846" side_tool="true" weight="0.52204585" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.33333334" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.71758157" weight="0.056338027" />
       <window_info id="Structure" order="1" sideWeight="0.502551" side_tool="true" weight="0.32716927" />
@@ -333,14 +356,14 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32976827" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.71758157" visible="true" weight="0.26408452" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.21478873" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.33333334" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49960223" weight="0.43309858" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.28241846" side_tool="true" weight="0.52328765" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.21478873" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.3293556" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.33333334" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -376,6 +399,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cutwords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -677,13 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="82" column="30" lean-forward="true" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cutwords.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -691,6 +717,21 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="94" column="16" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
