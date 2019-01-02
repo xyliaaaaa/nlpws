@@ -1,0 +1,929 @@
+C:\Users\xylia\PycharmProjects\nlpws\venv\Scripts\python.exe C:/Users/xylia/PycharmProjects/nlpws/src/model.py
+Loading training data...
+Data X Length 187915 Data Y Length 187915
+Data X Example [ 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22  8 23
+ 24 25 26 19 11 12 13 14  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0]
+Data Y Example [1 2 4 1 1 2 4 1 1 1 2 3 4 1 1 1 1 1 1 2 4 1 1 2 3 3 4 1 2 3 4 1 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Train X Shape (169123, 70) Train Y Shape (169123, 70)
+Dev X Shape (18792, 70) Dev Y Shape (18792, 70)
+Building iterator...
+Building model...
+Output Tensor("stack:0", shape=(?, 70, 128), dtype=float32)
+Output Reshape Tensor("Reshape:0", shape=(?, 128), dtype=float32)
+y scores Tensor("outputs/Reshape:0", shape=(?, 70, 5), dtype=float32)
+y_predict Tensor("ReverseSequence_1:0", shape=(256, 70), dtype=int32) y_label_reshape Tensor("inputs/IteratorGetNext:1", shape=(?, 70), dtype=int32)
+Prediction Tensor("Equal_1:0", shape=(256, 70), dtype=bool) Accuracy Tensor("Mean:0", shape=(), dtype=float32)
+C:\Users\xylia\PycharmProjects\nlpws\venv\lib\site-packages\tensorflow\python\ops\gradients_impl.py:112: UserWarning: Converting sparse IndexedSlices to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  "Converting sparse IndexedSlices to a dense Tensor of unknown shape. "
+2019-01-01 14:42:34.577412: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+Start training...
+Epoch 0 initialized.
+Global Step 0 Step 0 Train Loss 164.16795 Accuracy 0.08041295
+Write summaries to ..\summaries\
+Global Step 50 Step 50 Train Loss 28.4054 Accuracy 0.7936942
+Write summaries to ..\summaries\
+Global Step 100 Step 100 Train Loss 25.84003 Accuracy 0.81322545
+Write summaries to ..\summaries\
+Global Step 150 Step 150 Train Loss 24.077019 Accuracy 0.82276785
+Write summaries to ..\summaries\
+Global Step 200 Step 200 Train Loss 22.863483 Accuracy 0.8510045
+Write summaries to ..\summaries\
+Global Step 250 Step 250 Train Loss 19.19649 Accuracy 0.8796317
+Write summaries to ..\summaries\
+Global Step 300 Step 300 Train Loss 16.059982 Accuracy 0.89799106
+Write summaries to ..\summaries\
+Global Step 350 Step 350 Train Loss 14.329231 Accuracy 0.9142857
+Write summaries to ..\summaries\
+Global Step 400 Step 400 Train Loss 14.05759 Accuracy 0.9155692
+Write summaries to ..\summaries\
+Global Step 450 Step 450 Train Loss 12.922205 Accuracy 0.9220424
+Write summaries to ..\summaries\
+Global Step 500 Step 500 Train Loss 11.851551 Accuracy 0.9287946
+Write summaries to ..\summaries\
+Global Step 550 Step 550 Train Loss 10.47397 Accuracy 0.938058
+Write summaries to ..\summaries\
+Global Step 600 Step 600 Train Loss 10.282894 Accuracy 0.9366071
+Write summaries to ..\summaries\
+Global Step 650 Step 650 Train Loss 10.087551 Accuracy 0.9420201
+Write summaries to ..\summaries\
+invalid argument
+Dev Accuracy 0.94888395 Step 0
+Dev Accuracy 0.94464284 Step 50
+Epoch 1 initialized.
+Global Step 660 Step 0 Train Loss 8.926195 Accuracy 0.9476004
+Write summaries to ..\summaries\
+Global Step 710 Step 50 Train Loss 8.996635 Accuracy 0.9438616
+Write summaries to ..\summaries\
+Global Step 760 Step 100 Train Loss 9.640294 Accuracy 0.940904
+Write summaries to ..\summaries\
+Global Step 810 Step 150 Train Loss 8.368183 Accuracy 0.9461495
+Write summaries to ..\summaries\
+Global Step 860 Step 200 Train Loss 8.544552 Accuracy 0.94575894
+Write summaries to ..\summaries\
+Global Step 910 Step 250 Train Loss 8.356567 Accuracy 0.9479911
+Write summaries to ..\summaries\
+Global Step 960 Step 300 Train Loss 7.741295 Accuracy 0.9516183
+Write summaries to ..\summaries\
+Global Step 1010 Step 350 Train Loss 7.93755 Accuracy 0.94899553
+Write summaries to ..\summaries\
+Global Step 1060 Step 400 Train Loss 7.395917 Accuracy 0.9513393
+Write summaries to ..\summaries\
+Global Step 1110 Step 450 Train Loss 7.540008 Accuracy 0.9504464
+Write summaries to ..\summaries\
+Global Step 1160 Step 500 Train Loss 6.44976 Accuracy 0.9594308
+Write summaries to ..\summaries\
+Global Step 1210 Step 550 Train Loss 6.947935 Accuracy 0.95496655
+Write summaries to ..\summaries\
+Global Step 1260 Step 600 Train Loss 6.6234655 Accuracy 0.95379466
+Write summaries to ..\summaries\
+Global Step 1310 Step 650 Train Loss 6.180578 Accuracy 0.9563616
+invalid argument
+Epoch 2 initialized.
+Global Step 1320 Step 0 Train Loss 6.1118574 Accuracy 0.9585937
+Write summaries to ..\summaries\
+Global Step 1370 Step 50 Train Loss 6.581894 Accuracy 0.953683
+Write summaries to ..\summaries\
+Global Step 1420 Step 100 Train Loss 6.4260364 Accuracy 0.95708704
+Write summaries to ..\summaries\
+Global Step 1470 Step 150 Train Loss 6.0278234 Accuracy 0.9568638
+Write summaries to ..\summaries\
+Global Step 1520 Step 200 Train Loss 6.1018004 Accuracy 0.9579799
+Write summaries to ..\summaries\
+Global Step 1570 Step 250 Train Loss 6.2659674 Accuracy 0.95357144
+Write summaries to ..\summaries\
+Global Step 1620 Step 300 Train Loss 5.990469 Accuracy 0.9563616
+Write summaries to ..\summaries\
+Global Step 1670 Step 350 Train Loss 5.216633 Accuracy 0.96199775
+Write summaries to ..\summaries\
+Global Step 1720 Step 400 Train Loss 5.4514017 Accuracy 0.96054685
+Write summaries to ..\summaries\
+Global Step 1770 Step 450 Train Loss 5.4816895 Accuracy 0.9608259
+Write summaries to ..\summaries\
+Global Step 1820 Step 500 Train Loss 5.3781343 Accuracy 0.9601005
+Write summaries to ..\summaries\
+Global Step 1870 Step 550 Train Loss 4.9707985 Accuracy 0.96222097
+Write summaries to ..\summaries\
+Global Step 1920 Step 600 Train Loss 5.216287 Accuracy 0.9580357
+Write summaries to ..\summaries\
+Global Step 1970 Step 650 Train Loss 4.737608 Accuracy 0.9624442
+invalid argument
+Dev Accuracy 0.9699777 Step 0
+Dev Accuracy 0.96227676 Step 50
+Epoch 3 initialized.
+Global Step 1980 Step 0 Train Loss 4.8292313 Accuracy 0.9627232
+Write summaries to ..\summaries\
+Global Step 2030 Step 50 Train Loss 5.12828 Accuracy 0.96015626
+Write summaries to ..\summaries\
+Global Step 2080 Step 100 Train Loss 4.8012404 Accuracy 0.96160716
+Write summaries to ..\summaries\
+Global Step 2130 Step 150 Train Loss 4.8409343 Accuracy 0.96138394
+Write summaries to ..\summaries\
+Global Step 2180 Step 200 Train Loss 4.355687 Accuracy 0.96495533
+Write summaries to ..\summaries\
+Global Step 2230 Step 250 Train Loss 4.8432016 Accuracy 0.9630022
+Write summaries to ..\summaries\
+Global Step 2280 Step 300 Train Loss 4.4115467 Accuracy 0.96512276
+Write summaries to ..\summaries\
+Global Step 2330 Step 350 Train Loss 4.613375 Accuracy 0.96021205
+Write summaries to ..\summaries\
+Global Step 2380 Step 400 Train Loss 4.845735 Accuracy 0.9595424
+Write summaries to ..\summaries\
+Global Step 2430 Step 450 Train Loss 4.4975433 Accuracy 0.9630022
+Write summaries to ..\summaries\
+Global Step 2480 Step 500 Train Loss 4.6451173 Accuracy 0.9624442
+Write summaries to ..\summaries\
+Global Step 2530 Step 550 Train Loss 4.02112 Accuracy 0.96685266
+Write summaries to ..\summaries\
+Global Step 2580 Step 600 Train Loss 3.753687 Accuracy 0.96601564
+Write summaries to ..\summaries\
+Global Step 2630 Step 650 Train Loss 4.13107 Accuracy 0.9664062
+invalid argument
+Epoch 4 initialized.
+Global Step 2640 Step 0 Train Loss 3.9702795 Accuracy 0.9678571
+Write summaries to ..\summaries\
+Global Step 2690 Step 50 Train Loss 4.0342526 Accuracy 0.96450895
+Write summaries to ..\summaries\
+Global Step 2740 Step 100 Train Loss 4.416814 Accuracy 0.9627232
+Write summaries to ..\summaries\
+Global Step 2790 Step 150 Train Loss 4.351201 Accuracy 0.96339285
+Write summaries to ..\summaries\
+Global Step 2840 Step 200 Train Loss 4.305937 Accuracy 0.96171874
+Write summaries to ..\summaries\
+Global Step 2890 Step 250 Train Loss 3.996168 Accuracy 0.96484375
+Write summaries to ..\summaries\
+Global Step 2940 Step 300 Train Loss 3.7753134 Accuracy 0.96657366
+Write summaries to ..\summaries\
+Global Step 2990 Step 350 Train Loss 3.9941342 Accuracy 0.96333706
+Write summaries to ..\summaries\
+Global Step 3040 Step 400 Train Loss 3.740354 Accuracy 0.9664621
+Write summaries to ..\summaries\
+Global Step 3090 Step 450 Train Loss 3.531562 Accuracy 0.9682478
+Write summaries to ..\summaries\
+Global Step 3140 Step 500 Train Loss 3.560746 Accuracy 0.96875
+Write summaries to ..\summaries\
+Global Step 3190 Step 550 Train Loss 3.7663255 Accuracy 0.9669643
+Write summaries to ..\summaries\
+Global Step 3240 Step 600 Train Loss 3.5113132 Accuracy 0.96808034
+Write summaries to ..\summaries\
+Global Step 3290 Step 650 Train Loss 3.4155478 Accuracy 0.96969867
+invalid argument
+Dev Accuracy 0.971317 Step 0
+Dev Accuracy 0.97154015 Step 50
+Epoch 5 initialized.
+Global Step 3300 Step 0 Train Loss 3.8728948 Accuracy 0.9655134
+Write summaries to ..\summaries\
+Global Step 3350 Step 50 Train Loss 3.4536705 Accuracy 0.96975446
+Write summaries to ..\summaries\
+Global Step 3400 Step 100 Train Loss 3.938449 Accuracy 0.9639509
+Write summaries to ..\summaries\
+Global Step 3450 Step 150 Train Loss 3.675475 Accuracy 0.9688058
+Write summaries to ..\summaries\
+Global Step 3500 Step 200 Train Loss 3.5354838 Accuracy 0.965904
+Write summaries to ..\summaries\
+Global Step 3550 Step 250 Train Loss 3.38575 Accuracy 0.9689174
+Write summaries to ..\summaries\
+Global Step 3600 Step 300 Train Loss 3.5040464 Accuracy 0.96780133
+Write summaries to ..\summaries\
+Global Step 3650 Step 350 Train Loss 3.1609776 Accuracy 0.96953124
+Write summaries to ..\summaries\
+Global Step 3700 Step 400 Train Loss 3.522635 Accuracy 0.96768975
+Write summaries to ..\summaries\
+Global Step 3750 Step 450 Train Loss 3.327012 Accuracy 0.9692522
+Write summaries to ..\summaries\
+Global Step 3800 Step 500 Train Loss 3.3518693 Accuracy 0.96835935
+Write summaries to ..\summaries\
+Global Step 3850 Step 550 Train Loss 3.528691 Accuracy 0.9685268
+Write summaries to ..\summaries\
+Global Step 3900 Step 600 Train Loss 3.7125406 Accuracy 0.96662945
+Write summaries to ..\summaries\
+Global Step 3950 Step 650 Train Loss 3.4552512 Accuracy 0.96835935
+Write summaries to ..\summaries\
+invalid argument
+Epoch 6 initialized.
+Global Step 3960 Step 0 Train Loss 3.4573293 Accuracy 0.96662945
+Write summaries to ..\summaries\
+Global Step 4010 Step 50 Train Loss 3.090245 Accuracy 0.97126114
+Write summaries to ..\summaries\
+Global Step 4060 Step 100 Train Loss 3.1508167 Accuracy 0.9698661
+Write summaries to ..\summaries\
+Global Step 4110 Step 150 Train Loss 3.2372692 Accuracy 0.9707589
+Write summaries to ..\summaries\
+Global Step 4160 Step 200 Train Loss 3.0419283 Accuracy 0.97260046
+Write summaries to ..\summaries\
+Global Step 4210 Step 250 Train Loss 3.0475297 Accuracy 0.97154015
+Write summaries to ..\summaries\
+Global Step 4260 Step 300 Train Loss 3.23415 Accuracy 0.9686942
+Write summaries to ..\summaries\
+Global Step 4310 Step 350 Train Loss 3.1416066 Accuracy 0.9701451
+Write summaries to ..\summaries\
+Global Step 4360 Step 400 Train Loss 3.6038141 Accuracy 0.9655692
+Write summaries to ..\summaries\
+Global Step 4410 Step 450 Train Loss 3.1341686 Accuracy 0.97092634
+Write summaries to ..\summaries\
+Global Step 4460 Step 500 Train Loss 3.1265159 Accuracy 0.9714286
+Write summaries to ..\summaries\
+Global Step 4510 Step 550 Train Loss 3.2289655 Accuracy 0.97087055
+Write summaries to ..\summaries\
+Global Step 4560 Step 600 Train Loss 2.9831269 Accuracy 0.9710379
+Write summaries to ..\summaries\
+Global Step 4610 Step 650 Train Loss 2.6444476 Accuracy 0.9751116
+invalid argument
+Dev Accuracy 0.9751116 Step 0
+Dev Accuracy 0.9748326 Step 50
+Epoch 7 initialized.
+Global Step 4620 Step 0 Train Loss 3.1614704 Accuracy 0.9692522
+Write summaries to ..\summaries\
+Global Step 4670 Step 50 Train Loss 3.0131683 Accuracy 0.96919644
+Write summaries to ..\summaries\
+Global Step 4720 Step 100 Train Loss 2.9913158 Accuracy 0.9703683
+Write summaries to ..\summaries\
+Global Step 4770 Step 150 Train Loss 2.8471239 Accuracy 0.9730469
+Write summaries to ..\summaries\
+Global Step 4820 Step 200 Train Loss 2.8852735 Accuracy 0.9705357
+Write summaries to ..\summaries\
+Global Step 4870 Step 250 Train Loss 2.870877 Accuracy 0.9722098
+Write summaries to ..\summaries\
+Global Step 4920 Step 300 Train Loss 2.8056357 Accuracy 0.9722656
+Write summaries to ..\summaries\
+Global Step 4970 Step 350 Train Loss 2.854521 Accuracy 0.9710379
+Write summaries to ..\summaries\
+Global Step 5020 Step 400 Train Loss 3.116183 Accuracy 0.9717634
+Write summaries to ..\summaries\
+Global Step 5070 Step 450 Train Loss 2.801549 Accuracy 0.97416294
+Write summaries to ..\summaries\
+Global Step 5120 Step 500 Train Loss 3.0978436 Accuracy 0.9698661
+Write summaries to ..\summaries\
+Global Step 5170 Step 550 Train Loss 2.5689712 Accuracy 0.9748884
+Write summaries to ..\summaries\
+Global Step 5220 Step 600 Train Loss 2.7053835 Accuracy 0.97276783
+Write summaries to ..\summaries\
+Global Step 5270 Step 650 Train Loss 2.7942014 Accuracy 0.97321427
+invalid argument
+Epoch 8 initialized.
+Global Step 5280 Step 0 Train Loss 2.7560787 Accuracy 0.97237724
+Write summaries to ..\summaries\
+Global Step 5330 Step 50 Train Loss 2.5159051 Accuracy 0.9766183
+Write summaries to ..\summaries\
+Global Step 5380 Step 100 Train Loss 2.6000862 Accuracy 0.9749442
+Write summaries to ..\summaries\
+Global Step 5430 Step 150 Train Loss 2.7375088 Accuracy 0.97260046
+Write summaries to ..\summaries\
+Global Step 5480 Step 200 Train Loss 2.4645772 Accuracy 0.97611606
+Write summaries to ..\summaries\
+Global Step 5530 Step 250 Train Loss 2.628798 Accuracy 0.9736049
+Write summaries to ..\summaries\
+Global Step 5580 Step 300 Train Loss 2.8681622 Accuracy 0.9701451
+Write summaries to ..\summaries\
+Global Step 5630 Step 350 Train Loss 2.7668023 Accuracy 0.971317
+Write summaries to ..\summaries\
+Global Step 5680 Step 400 Train Loss 2.6266353 Accuracy 0.97237724
+Write summaries to ..\summaries\
+Global Step 5730 Step 450 Train Loss 2.7306204 Accuracy 0.9719308
+Write summaries to ..\summaries\
+Global Step 5780 Step 500 Train Loss 2.7953541 Accuracy 0.9707589
+Write summaries to ..\summaries\
+Global Step 5830 Step 550 Train Loss 2.5435956 Accuracy 0.97382814
+Write summaries to ..\summaries\
+Global Step 5880 Step 600 Train Loss 2.4357872 Accuracy 0.97594863
+Write summaries to ..\summaries\
+Global Step 5930 Step 650 Train Loss 2.2609673 Accuracy 0.9766183
+invalid argument
+Dev Accuracy 0.9760045 Step 0
+Dev Accuracy 0.97879463 Step 50
+Epoch 9 initialized.
+Global Step 5940 Step 0 Train Loss 2.6178584 Accuracy 0.9745536
+Write summaries to ..\summaries\
+Global Step 5990 Step 50 Train Loss 2.8681 Accuracy 0.9722098
+Write summaries to ..\summaries\
+Global Step 6040 Step 100 Train Loss 2.4680212 Accuracy 0.97611606
+Write summaries to ..\summaries\
+Global Step 6090 Step 150 Train Loss 2.5527701 Accuracy 0.97555804
+Write summaries to ..\summaries\
+Global Step 6140 Step 200 Train Loss 2.085815 Accuracy 0.9800223
+Write summaries to ..\summaries\
+Global Step 6190 Step 250 Train Loss 2.3797426 Accuracy 0.9749442
+Write summaries to ..\summaries\
+Global Step 6240 Step 300 Train Loss 2.4850092 Accuracy 0.9754464
+Write summaries to ..\summaries\
+Global Step 6290 Step 350 Train Loss 2.5498013 Accuracy 0.9745536
+Write summaries to ..\summaries\
+Global Step 6340 Step 400 Train Loss 2.1246765 Accuracy 0.9785156
+Write summaries to ..\summaries\
+Global Step 6390 Step 450 Train Loss 2.6714933 Accuracy 0.9710379
+Write summaries to ..\summaries\
+Global Step 6440 Step 500 Train Loss 2.5625305 Accuracy 0.975
+Write summaries to ..\summaries\
+Global Step 6490 Step 550 Train Loss 2.37351 Accuracy 0.9766741
+Write summaries to ..\summaries\
+Global Step 6540 Step 600 Train Loss 2.5039396 Accuracy 0.97433037
+Write summaries to ..\summaries\
+Global Step 6590 Step 650 Train Loss 2.2865145 Accuracy 0.9760603
+invalid argument
+Epoch 10 initialized.
+Global Step 6600 Step 0 Train Loss 2.5779004 Accuracy 0.9739397
+Write summaries to ..\summaries\
+Global Step 6650 Step 50 Train Loss 2.4733512 Accuracy 0.97254467
+Write summaries to ..\summaries\
+Global Step 6700 Step 100 Train Loss 2.1603827 Accuracy 0.9773995
+Write summaries to ..\summaries\
+Global Step 6750 Step 150 Train Loss 2.2310352 Accuracy 0.97896206
+Write summaries to ..\summaries\
+Global Step 6800 Step 200 Train Loss 1.9750752 Accuracy 0.9795759
+Write summaries to ..\summaries\
+Global Step 6850 Step 250 Train Loss 2.3371184 Accuracy 0.9760603
+Write summaries to ..\summaries\
+Global Step 6900 Step 300 Train Loss 2.290457 Accuracy 0.9776786
+Write summaries to ..\summaries\
+Global Step 6950 Step 350 Train Loss 2.1045003 Accuracy 0.9797433
+Write summaries to ..\summaries\
+Global Step 7000 Step 400 Train Loss 2.297958 Accuracy 0.97695315
+Write summaries to ..\summaries\
+Global Step 7050 Step 450 Train Loss 2.5083714 Accuracy 0.97444195
+Write summaries to ..\summaries\
+Global Step 7100 Step 500 Train Loss 2.594473 Accuracy 0.971875
+Write summaries to ..\summaries\
+Global Step 7150 Step 550 Train Loss 2.2584953 Accuracy 0.9780692
+Write summaries to ..\summaries\
+Global Step 7200 Step 600 Train Loss 2.090297 Accuracy 0.9777902
+Write summaries to ..\summaries\
+Global Step 7250 Step 650 Train Loss 2.2969506 Accuracy 0.9765625
+Write summaries to ..\summaries\
+invalid argument
+Dev Accuracy 0.97695315 Step 0
+Dev Accuracy 0.97700894 Step 50
+Epoch 11 initialized.
+Global Step 7260 Step 0 Train Loss 2.0794919 Accuracy 0.97734374
+Write summaries to ..\summaries\
+Global Step 7310 Step 50 Train Loss 2.036752 Accuracy 0.97907364
+Write summaries to ..\summaries\
+Global Step 7360 Step 100 Train Loss 2.0061295 Accuracy 0.9811384
+Write summaries to ..\summaries\
+Global Step 7410 Step 150 Train Loss 2.225148 Accuracy 0.9762277
+Write summaries to ..\summaries\
+Global Step 7460 Step 200 Train Loss 1.813647 Accuracy 0.98309153
+Write summaries to ..\summaries\
+Global Step 7510 Step 250 Train Loss 2.3345978 Accuracy 0.97896206
+Write summaries to ..\summaries\
+Global Step 7560 Step 300 Train Loss 2.1807415 Accuracy 0.9771205
+Write summaries to ..\summaries\
+Global Step 7610 Step 350 Train Loss 1.9788296 Accuracy 0.98024553
+Write summaries to ..\summaries\
+Global Step 7660 Step 400 Train Loss 2.089275 Accuracy 0.9795201
+Write summaries to ..\summaries\
+Global Step 7710 Step 450 Train Loss 2.08471 Accuracy 0.9788504
+Write summaries to ..\summaries\
+Global Step 7760 Step 500 Train Loss 2.3485708 Accuracy 0.9782366
+Write summaries to ..\summaries\
+Global Step 7810 Step 550 Train Loss 2.3713272 Accuracy 0.9786272
+Write summaries to ..\summaries\
+Global Step 7860 Step 600 Train Loss 1.9200988 Accuracy 0.9810826
+Write summaries to ..\summaries\
+Global Step 7910 Step 650 Train Loss 2.0969758 Accuracy 0.9796317
+invalid argument
+Epoch 12 initialized.
+Global Step 7920 Step 0 Train Loss 2.0750132 Accuracy 0.9791853
+Write summaries to ..\summaries\
+Global Step 7970 Step 50 Train Loss 2.2922025 Accuracy 0.97717637
+Write summaries to ..\summaries\
+Global Step 8020 Step 100 Train Loss 1.8393545 Accuracy 0.98069197
+Write summaries to ..\summaries\
+Global Step 8070 Step 150 Train Loss 1.9572291 Accuracy 0.9798549
+Write summaries to ..\summaries\
+Global Step 8120 Step 200 Train Loss 1.8460846 Accuracy 0.9817522
+Write summaries to ..\summaries\
+Global Step 8170 Step 250 Train Loss 1.7218573 Accuracy 0.9828683
+Write summaries to ..\summaries\
+Global Step 8220 Step 300 Train Loss 1.8514618 Accuracy 0.9823103
+Write summaries to ..\summaries\
+Global Step 8270 Step 350 Train Loss 2.0317786 Accuracy 0.9799665
+Write summaries to ..\summaries\
+Global Step 8320 Step 400 Train Loss 1.8222883 Accuracy 0.9820312
+Write summaries to ..\summaries\
+Global Step 8370 Step 450 Train Loss 2.0425775 Accuracy 0.9794643
+Write summaries to ..\summaries\
+Global Step 8420 Step 500 Train Loss 2.0250068 Accuracy 0.97790176
+Write summaries to ..\summaries\
+Global Step 8470 Step 550 Train Loss 2.1594954 Accuracy 0.97790176
+Write summaries to ..\summaries\
+Global Step 8520 Step 600 Train Loss 1.966331 Accuracy 0.97901785
+Write summaries to ..\summaries\
+Global Step 8570 Step 650 Train Loss 1.9203836 Accuracy 0.981529
+invalid argument
+Dev Accuracy 0.98303574 Step 0
+Dev Accuracy 0.98069197 Step 50
+Epoch 13 initialized.
+Global Step 8580 Step 0 Train Loss 1.7739737 Accuracy 0.98359376
+Write summaries to ..\summaries\
+Global Step 8630 Step 50 Train Loss 1.9273407 Accuracy 0.98080355
+Write summaries to ..\summaries\
+Global Step 8680 Step 100 Train Loss 1.9399285 Accuracy 0.9806362
+Write summaries to ..\summaries\
+Global Step 8730 Step 150 Train Loss 1.6716347 Accuracy 0.98359376
+Write summaries to ..\summaries\
+Global Step 8780 Step 200 Train Loss 1.6286309 Accuracy 0.98370534
+Write summaries to ..\summaries\
+Global Step 8830 Step 250 Train Loss 2.0334322 Accuracy 0.9783482
+Write summaries to ..\summaries\
+Global Step 8880 Step 300 Train Loss 1.9875901 Accuracy 0.97901785
+Write summaries to ..\summaries\
+Global Step 8930 Step 350 Train Loss 1.8713937 Accuracy 0.98035717
+Write summaries to ..\summaries\
+Global Step 8980 Step 400 Train Loss 1.7831676 Accuracy 0.98164064
+Write summaries to ..\summaries\
+Global Step 9030 Step 450 Train Loss 2.0205626 Accuracy 0.98080355
+Write summaries to ..\summaries\
+Global Step 9080 Step 500 Train Loss 1.9738545 Accuracy 0.9795759
+Write summaries to ..\summaries\
+Global Step 9130 Step 550 Train Loss 1.8066512 Accuracy 0.9814174
+Write summaries to ..\summaries\
+Global Step 9180 Step 600 Train Loss 1.7325337 Accuracy 0.98214287
+Write summaries to ..\summaries\
+Global Step 9230 Step 650 Train Loss 1.6542702 Accuracy 0.9828125
+invalid argument
+Epoch 14 initialized.
+Global Step 9240 Step 0 Train Loss 1.9256859 Accuracy 0.98186386
+Write summaries to ..\summaries\
+Global Step 9290 Step 50 Train Loss 1.8393171 Accuracy 0.98158485
+Write summaries to ..\summaries\
+Global Step 9340 Step 100 Train Loss 2.1020064 Accuracy 0.9791295
+Write summaries to ..\summaries\
+Global Step 9390 Step 150 Train Loss 1.7666359 Accuracy 0.9817522
+Write summaries to ..\summaries\
+Global Step 9440 Step 200 Train Loss 1.7003968 Accuracy 0.9820871
+Write summaries to ..\summaries\
+Global Step 9490 Step 250 Train Loss 1.7049515 Accuracy 0.9825893
+Write summaries to ..\summaries\
+Global Step 9540 Step 300 Train Loss 1.937376 Accuracy 0.9817522
+Write summaries to ..\summaries\
+Global Step 9590 Step 350 Train Loss 1.4765784 Accuracy 0.9842634
+Write summaries to ..\summaries\
+Global Step 9640 Step 400 Train Loss 1.7864313 Accuracy 0.98253345
+Write summaries to ..\summaries\
+Global Step 9690 Step 450 Train Loss 2.1056747 Accuracy 0.97896206
+Write summaries to ..\summaries\
+Global Step 9740 Step 500 Train Loss 1.6564877 Accuracy 0.9842634
+Write summaries to ..\summaries\
+Global Step 9790 Step 550 Train Loss 1.9400828 Accuracy 0.9814174
+Write summaries to ..\summaries\
+Global Step 9840 Step 600 Train Loss 1.5919344 Accuracy 0.9842634
+Write summaries to ..\summaries\
+Global Step 9890 Step 650 Train Loss 1.786818 Accuracy 0.98125
+invalid argument
+Dev Accuracy 0.9820871 Step 0
+Dev Accuracy 0.9813058 Step 50
+Epoch 15 initialized.
+Global Step 9900 Step 0 Train Loss 1.8050866 Accuracy 0.98364955
+Write summaries to ..\summaries\
+Global Step 9950 Step 50 Train Loss 1.8351879 Accuracy 0.9809152
+Write summaries to ..\summaries\
+Global Step 10000 Step 100 Train Loss 1.5552871 Accuracy 0.9844866
+Write summaries to ..\summaries\
+Global Step 10050 Step 150 Train Loss 1.6812112 Accuracy 0.98337054
+Write summaries to ..\summaries\
+Global Step 10100 Step 200 Train Loss 1.7161398 Accuracy 0.98303574
+Write summaries to ..\summaries\
+Global Step 10150 Step 250 Train Loss 1.9804585 Accuracy 0.98041296
+Write summaries to ..\summaries\
+Global Step 10200 Step 300 Train Loss 1.5177956 Accuracy 0.983817
+Write summaries to ..\summaries\
+Global Step 10250 Step 350 Train Loss 1.4900384 Accuracy 0.984933
+Write summaries to ..\summaries\
+Global Step 10300 Step 400 Train Loss 1.7191703 Accuracy 0.9827009
+Write summaries to ..\summaries\
+Global Step 10350 Step 450 Train Loss 2.1114938 Accuracy 0.98041296
+Write summaries to ..\summaries\
+Global Step 10400 Step 500 Train Loss 1.7493527 Accuracy 0.9823661
+Write summaries to ..\summaries\
+Global Step 10450 Step 550 Train Loss 1.8114909 Accuracy 0.9831473
+Write summaries to ..\summaries\
+Global Step 10500 Step 600 Train Loss 1.5856707 Accuracy 0.983538
+Write summaries to ..\summaries\
+Global Step 10550 Step 650 Train Loss 1.6039636 Accuracy 0.98364955
+Write summaries to ..\summaries\
+invalid argument
+Epoch 16 initialized.
+Global Step 10560 Step 0 Train Loss 1.5774798 Accuracy 0.9848772
+Write summaries to ..\summaries\
+Global Step 10610 Step 50 Train Loss 1.6083002 Accuracy 0.9831473
+Write summaries to ..\summaries\
+Global Step 10660 Step 100 Train Loss 1.8868968 Accuracy 0.98164064
+Write summaries to ..\summaries\
+Global Step 10710 Step 150 Train Loss 1.615308 Accuracy 0.98337054
+Write summaries to ..\summaries\
+Global Step 10760 Step 200 Train Loss 1.5514417 Accuracy 0.98398435
+Write summaries to ..\summaries\
+Global Step 10810 Step 250 Train Loss 1.5294366 Accuracy 0.98498887
+Write summaries to ..\summaries\
+Global Step 10860 Step 300 Train Loss 1.8125069 Accuracy 0.9827567
+Write summaries to ..\summaries\
+Global Step 10910 Step 350 Train Loss 1.6381052 Accuracy 0.98337054
+Write summaries to ..\summaries\
+Global Step 10960 Step 400 Train Loss 1.5930698 Accuracy 0.98364955
+Write summaries to ..\summaries\
+Global Step 11010 Step 450 Train Loss 1.7433794 Accuracy 0.9826451
+  Write summaries to ..\summaries\
+Global Step 11060 Step 500 Train Loss 1.4768267 Accuracy 0.9845424
+Write summaries to ..\summaries\
+Global Step 11110 Step 550 Train Loss 1.6783357 Accuracy 0.9858259
+Write summaries to ..\summaries\
+Global Step 11160 Step 600 Train Loss 1.4734132 Accuracy 0.984096
+Write summaries to ..\summaries\
+Global Step 11210 Step 650 Train Loss 1.7249866 Accuracy 0.98253345
+invalid argument
+Dev Accuracy 0.98309153 Step 0
+Dev Accuracy 0.9794643 Step 50
+Epoch 17 initialized.
+Global Step 11220 Step 0 Train Loss 1.5860214 Accuracy 0.98498887
+Write summaries to ..\summaries\
+Global Step 11270 Step 50 Train Loss 1.6943743 Accuracy 0.9820871
+Write summaries to ..\summaries\
+Global Step 11320 Step 100 Train Loss 1.5445421 Accuracy 0.98482144
+Write summaries to ..\summaries\
+Global Step 11370 Step 150 Train Loss 1.7477162 Accuracy 0.98309153
+Write summaries to ..\summaries\
+Global Step 11420 Step 200 Train Loss 1.522265 Accuracy 0.9844866
+Write summaries to ..\summaries\
+Global Step 11470 Step 250 Train Loss 1.6234622 Accuracy 0.9854911
+Write summaries to ..\summaries\
+Global Step 11520 Step 300 Train Loss 1.8431001 Accuracy 0.9827009
+Write summaries to ..\summaries\
+Global Step 11570 Step 350 Train Loss 1.6331055 Accuracy 0.9834821
+Write summaries to ..\summaries\
+Global Step 11620 Step 400 Train Loss 1.7571018 Accuracy 0.98303574
+Write summaries to ..\summaries\
+Global Step 11670 Step 450 Train Loss 1.5861859 Accuracy 0.9845982
+Write summaries to ..\summaries\
+Global Step 11720 Step 500 Train Loss 1.7495568 Accuracy 0.9813616
+Write summaries to ..\summaries\
+Global Step 11770 Step 550 Train Loss 1.4252863 Accuracy 0.9858817
+Write summaries to ..\summaries\
+Global Step 11820 Step 600 Train Loss 1.4847567 Accuracy 0.98537946
+Write summaries to ..\summaries\
+Global Step 11870 Step 650 Train Loss 1.6185939 Accuracy 0.9834821
+invalid argument
+Epoch 18 initialized.
+Global Step 11880 Step 0 Train Loss 1.4746308 Accuracy 0.98565847
+Write summaries to ..\summaries\
+Global Step 11930 Step 50 Train Loss 1.5922754 Accuracy 0.9832589
+Write summaries to ..\summaries\
+Global Step 11980 Step 100 Train Loss 1.501785 Accuracy 0.9860491
+Write summaries to ..\summaries\
+Global Step 12030 Step 150 Train Loss 1.578238 Accuracy 0.984375
+Write summaries to ..\summaries\
+Global Step 12080 Step 200 Train Loss 1.5751472 Accuracy 0.98571426
+Write summaries to ..\summaries\
+Global Step 12130 Step 250 Train Loss 1.3373442 Accuracy 0.9852679
+Write summaries to ..\summaries\
+Global Step 12180 Step 300 Train Loss 1.8052104 Accuracy 0.9831473
+Write summaries to ..\summaries\
+Global Step 12230 Step 350 Train Loss 1.4200528 Accuracy 0.983817
+Write summaries to ..\summaries\
+Global Step 12280 Step 400 Train Loss 1.4687812 Accuracy 0.985212
+Write summaries to ..\summaries\
+Global Step 12330 Step 450 Train Loss 1.2949064 Accuracy 0.9857701
+Write summaries to ..\summaries\
+Global Step 12380 Step 500 Train Loss 1.4592118 Accuracy 0.9852679
+Write summaries to ..\summaries\
+Global Step 12430 Step 550 Train Loss 1.5384495 Accuracy 0.9858259
+Write summaries to ..\summaries\
+Global Step 12480 Step 600 Train Loss 1.6929693 Accuracy 0.98253345
+Write summaries to ..\summaries\
+Global Step 12530 Step 650 Train Loss 1.5556409 Accuracy 0.9858259
+invalid argument
+Dev Accuracy 0.9842634 Step 0
+Dev Accuracy 0.98219866 Step 50
+Epoch 19 initialized.
+Global Step 12540 Step 0 Train Loss 1.4527795 Accuracy 0.9857701
+Write summaries to ..\summaries\
+Global Step 12590 Step 50 Train Loss 1.6484411 Accuracy 0.9816964
+Write summaries to ..\summaries\
+Global Step 12640 Step 100 Train Loss 1.4958034 Accuracy 0.98543525
+Write summaries to ..\summaries\
+Global Step 12690 Step 150 Train Loss 1.4866033 Accuracy 0.9844866
+Write summaries to ..\summaries\
+Global Step 12740 Step 200 Train Loss 1.2500103 Accuracy 0.9856027
+Write summaries to ..\summaries\
+Global Step 12790 Step 250 Train Loss 1.5745034 Accuracy 0.9834821
+Write summaries to ..\summaries\
+Global Step 12840 Step 300 Train Loss 1.4601943 Accuracy 0.98504466
+Write summaries to ..\summaries\
+Global Step 12890 Step 350 Train Loss 1.4139023 Accuracy 0.98565847
+Write summaries to ..\summaries\
+Global Step 12940 Step 400 Train Loss 1.5685074 Accuracy 0.9854911
+Write summaries to ..\summaries\
+Global Step 12990 Step 450 Train Loss 1.5795791 Accuracy 0.98532367
+Write summaries to ..\summaries\
+Global Step 13040 Step 500 Train Loss 1.5198536 Accuracy 0.9847098
+Write summaries to ..\summaries\
+Global Step 13090 Step 550 Train Loss 1.6739343 Accuracy 0.98392856
+Write summaries to ..\summaries\
+Global Step 13140 Step 600 Train Loss 1.579411 Accuracy 0.98510045
+Write summaries to ..\summaries\
+Global Step 13190 Step 650 Train Loss 1.8233076 Accuracy 0.98214287
+invalid argument
+Epoch 20 initialized.
+Global Step 13200 Step 0 Train Loss 1.2258935 Accuracy 0.986942
+Write summaries to ..\summaries\
+Global Step 13250 Step 50 Train Loss 1.6939983 Accuracy 0.98125
+Write summaries to ..\summaries\
+Global Step 13300 Step 100 Train Loss 1.4727626 Accuracy 0.98532367
+Write summaries to ..\summaries\
+Global Step 13350 Step 150 Train Loss 1.3944919 Accuracy 0.9855469
+Write summaries to ..\summaries\
+Global Step 13400 Step 200 Train Loss 1.2325084 Accuracy 0.98627234
+Write summaries to ..\summaries\
+Global Step 13450 Step 250 Train Loss 1.404269 Accuracy 0.9855469
+Write summaries to ..\summaries\
+Global Step 13500 Step 300 Train Loss 1.3986225 Accuracy 0.9858817
+Write summaries to ..\summaries\
+Global Step 13550 Step 350 Train Loss 1.6049298 Accuracy 0.9845982
+Write summaries to ..\summaries\
+Global Step 13600 Step 400 Train Loss 1.5828643 Accuracy 0.9848772
+Write summaries to ..\summaries\
+Global Step 13650 Step 450 Train Loss 1.4472291 Accuracy 0.9866629
+Write summaries to ..\summaries\
+Global Step 13700 Step 500 Train Loss 1.5081191 Accuracy 0.9840402
+Write summaries to ..\summaries\
+Global Step 13750 Step 550 Train Loss 1.5182285 Accuracy 0.9827009
+Write summaries to ..\summaries\
+Global Step 13800 Step 600 Train Loss 1.276957 Accuracy 0.98794645
+Write summaries to ..\summaries\
+Global Step 13850 Step 650 Train Loss 1.3326681 Accuracy 0.9869978
+Write summaries to ..\summaries\
+invalid argument
+Dev Accuracy 0.9832031 Step 0
+Dev Accuracy 0.98515624 Step 50
+Epoch 21 initialized.
+Global Step 13860 Step 0 Train Loss 1.2040577 Accuracy 0.9890625
+Write summaries to ..\summaries\
+Global Step 13910 Step 50 Train Loss 1.6029005 Accuracy 0.98359376
+Write summaries to ..\summaries\
+Global Step 13960 Step 100 Train Loss 1.570518 Accuracy 0.984654
+Write summaries to ..\summaries\
+Global Step 14010 Step 150 Train Loss 1.2974527 Accuracy 0.9878348
+Write summaries to ..\summaries\
+Global Step 14060 Step 200 Train Loss 1.276871 Accuracy 0.9873326
+Write summaries to ..\summaries\
+Global Step 14110 Step 250 Train Loss 1.3695638 Accuracy 0.9864397
+Write summaries to ..\summaries\
+Global Step 14160 Step 300 Train Loss 1.2981474 Accuracy 0.98805803
+Write summaries to ..\summaries\
+Global Step 14210 Step 350 Train Loss 1.4673836 Accuracy 0.98498887
+Write summaries to ..\summaries\
+Global Step 14260 Step 400 Train Loss 1.7524211 Accuracy 0.98398435
+Write summaries to ..\summaries\
+Global Step 14310 Step 450 Train Loss 1.4063342 Accuracy 0.9867188
+Write summaries to ..\summaries\
+Global Step 14360 Step 500 Train Loss 1.4392865 Accuracy 0.985212
+Write summaries to ..\summaries\
+Global Step 14410 Step 550 Train Loss 1.55773 Accuracy 0.9844308
+Write summaries to ..\summaries\
+Global Step 14460 Step 600 Train Loss 1.479815 Accuracy 0.98571426
+Write summaries to ..\summaries\
+Global Step 14510 Step 650 Train Loss 1.4079986 Accuracy 0.9863281
+invalid argument
+Epoch 22 initialized.
+Global Step 14520 Step 0 Train Loss 1.266783 Accuracy 0.987221
+Write summaries to ..\summaries\
+Global Step 14570 Step 50 Train Loss 1.4088368 Accuracy 0.9858817
+Write summaries to ..\summaries\
+Global Step 14620 Step 100 Train Loss 1.3613709 Accuracy 0.986942
+Write summaries to ..\summaries\
+Global Step 14670 Step 150 Train Loss 1.4411435 Accuracy 0.98510045
+Write summaries to ..\summaries\
+Global Step 14720 Step 200 Train Loss 1.340169 Accuracy 0.9869978
+Write summaries to ..\summaries\
+Global Step 14770 Step 250 Train Loss 1.4494083 Accuracy 0.98543525
+Write summaries to ..\summaries\
+Global Step 14820 Step 300 Train Loss 1.3924689 Accuracy 0.9859375
+Write summaries to ..\summaries\
+Global Step 14870 Step 350 Train Loss 1.4937849 Accuracy 0.9864397
+Write summaries to ..\summaries\
+Global Step 14920 Step 400 Train Loss 1.304316 Accuracy 0.9875558
+Write summaries to ..\summaries\
+Global Step 14970 Step 450 Train Loss 1.4280648 Accuracy 0.98532367
+Write summaries to ..\summaries\
+Global Step 15020 Step 500 Train Loss 1.5617657 Accuracy 0.9856027
+Write summaries to ..\summaries\
+Global Step 15070 Step 550 Train Loss 1.270819 Accuracy 0.9874442
+Write summaries to ..\summaries\
+Global Step 15120 Step 600 Train Loss 1.3853576 Accuracy 0.98621655
+Write summaries to ..\summaries\
+Global Step 15170 Step 650 Train Loss 1.4682904 Accuracy 0.98532367
+invalid argument
+Dev Accuracy 0.9844308 Step 0
+Dev Accuracy 0.9834821 Step 50
+Epoch 23 initialized.
+Global Step 15180 Step 0 Train Loss 1.2967663 Accuracy 0.98621655
+Write summaries to ..\summaries\
+Global Step 15230 Step 50 Train Loss 1.5869398 Accuracy 0.9832589
+Write summaries to ..\summaries\
+Global Step 15280 Step 100 Train Loss 1.5920465 Accuracy 0.98537946
+Write summaries to ..\summaries\
+Global Step 15330 Step 150 Train Loss 1.291317 Accuracy 0.9859933
+Write summaries to ..\summaries\
+Global Step 15380 Step 200 Train Loss 1.2334983 Accuracy 0.9881138
+Write summaries to ..\summaries\
+Global Step 15430 Step 250 Train Loss 1.2120087 Accuracy 0.9869978
+Write summaries to ..\summaries\
+Global Step 15480 Step 300 Train Loss 1.3351507 Accuracy 0.98655134
+Write summaries to ..\summaries\
+Global Step 15530 Step 350 Train Loss 1.256258 Accuracy 0.9861049
+Write summaries to ..\summaries\
+Global Step 15580 Step 400 Train Loss 1.5561588 Accuracy 0.98537946
+Write summaries to ..\summaries\
+Global Step 15630 Step 450 Train Loss 1.3348517 Accuracy 0.9870536
+Write summaries to ..\summaries\
+Global Step 15680 Step 500 Train Loss 1.3882697 Accuracy 0.9860491
+Write summaries to ..\summaries\
+Global Step 15730 Step 550 Train Loss 1.3423789 Accuracy 0.9859933
+Write summaries to ..\summaries\
+Global Step 15780 Step 600 Train Loss 1.3981166 Accuracy 0.98565847
+Write summaries to ..\summaries\
+Global Step 15830 Step 650 Train Loss 1.2437729 Accuracy 0.9876116
+invalid argument
+Epoch 24 initialized.
+Global Step 15840 Step 0 Train Loss 1.3919628 Accuracy 0.9867188
+Write summaries to ..\summaries\
+Global Step 15890 Step 50 Train Loss 1.2712631 Accuracy 0.9881138
+Write summaries to ..\summaries\
+Global Step 15940 Step 100 Train Loss 1.2149622 Accuracy 0.9878348
+Write summaries to ..\summaries\
+Global Step 15990 Step 150 Train Loss 1.2445526 Accuracy 0.9867188
+Write summaries to ..\summaries\
+Global Step 16040 Step 200 Train Loss 1.2241771 Accuracy 0.98833704
+Write summaries to ..\summaries\
+Global Step 16090 Step 250 Train Loss 1.2274683 Accuracy 0.98828125
+Write summaries to ..\summaries\
+Global Step 16140 Step 300 Train Loss 1.3729308 Accuracy 0.9857701
+Write summaries to ..\summaries\
+Global Step 16190 Step 350 Train Loss 1.1630442 Accuracy 0.98861605
+Write summaries to ..\summaries\
+Global Step 16240 Step 400 Train Loss 1.2141821 Accuracy 0.9892857
+Write summaries to ..\summaries\
+Global Step 16290 Step 450 Train Loss 1.4162889 Accuracy 0.9864397
+Write summaries to ..\summaries\
+Global Step 16340 Step 500 Train Loss 1.1000066 Accuracy 0.98939735
+Write summaries to ..\summaries\
+Global Step 16390 Step 550 Train Loss 1.3941104 Accuracy 0.9859933
+Write summaries to ..\summaries\
+Global Step 16440 Step 600 Train Loss 1.2343751 Accuracy 0.9887835
+Write summaries to ..\summaries\
+Global Step 16490 Step 650 Train Loss 1.3461477 Accuracy 0.98543525
+invalid argument
+Dev Accuracy 0.98498887 Step 0
+Dev Accuracy 0.9844308 Step 50
+Epoch 25 initialized.
+Global Step 16500 Step 0 Train Loss 1.3159261 Accuracy 0.9870536
+Write summaries to ..\summaries\
+Global Step 16550 Step 50 Train Loss 1.2958958 Accuracy 0.9863839
+Write summaries to ..\summaries\
+Global Step 16600 Step 100 Train Loss 0.99325633 Accuracy 0.99123883
+Write summaries to ..\summaries\
+Global Step 16650 Step 150 Train Loss 1.0862582 Accuracy 0.9892857
+Write summaries to ..\summaries\
+Global Step 16700 Step 200 Train Loss 1.1443374 Accuracy 0.98794645
+Write summaries to ..\summaries\
+Global Step 16750 Step 250 Train Loss 1.117826 Accuracy 0.9890625
+Write summaries to ..\summaries\
+Global Step 16800 Step 300 Train Loss 1.3502207 Accuracy 0.98649555
+Write summaries to ..\summaries\
+Global Step 16850 Step 350 Train Loss 1.1379993 Accuracy 0.9887835
+Write summaries to ..\summaries\
+Global Step 16900 Step 400 Train Loss 1.409116 Accuracy 0.9863839
+Write summaries to ..\summaries\
+Global Step 16950 Step 450 Train Loss 1.2688291 Accuracy 0.98716515
+Write summaries to ..\summaries\
+Global Step 17000 Step 500 Train Loss 1.40906 Accuracy 0.9842076
+Write summaries to ..\summaries\
+Global Step 17050 Step 550 Train Loss 1.3723199 Accuracy 0.9860491
+Write summaries to ..\summaries\
+Global Step 17100 Step 600 Train Loss 1.0916584 Accuracy 0.9890625
+Write summaries to ..\summaries\
+Global Step 17150 Step 650 Train Loss 1.2944024 Accuracy 0.9874442
+Write summaries to ..\summaries\
+invalid argument
+Epoch 26 initialized.
+Global Step 17160 Step 0 Train Loss 1.1966305 Accuracy 0.98816967
+Write summaries to ..\summaries\
+Global Step 17210 Step 50 Train Loss 1.1999404 Accuracy 0.98649555
+Write summaries to ..\summaries\
+Global Step 17260 Step 100 Train Loss 1.1571715 Accuracy 0.9892299
+Write summaries to ..\summaries\
+Global Step 17310 Step 150 Train Loss 1.2159348 Accuracy 0.9869978
+Write summaries to ..\summaries\
+Global Step 17360 Step 200 Train Loss 1.2713649 Accuracy 0.98800224
+Write summaries to ..\summaries\
+Global Step 17410 Step 250 Train Loss 1.0921092 Accuracy 0.9888951
+Write summaries to ..\summaries\
+Global Step 17460 Step 300 Train Loss 1.3143411 Accuracy 0.98621655
+Write summaries to ..\summaries\
+Global Step 17510 Step 350 Train Loss 1.381674 Accuracy 0.98655134
+Write summaries to ..\summaries\
+Global Step 17560 Step 400 Train Loss 1.2585466 Accuracy 0.98710936
+Write summaries to ..\summaries\
+Global Step 17610 Step 450 Train Loss 1.2362204 Accuracy 0.98822546
+Write summaries to ..\summaries\
+Global Step 17660 Step 500 Train Loss 1.1591063 Accuracy 0.9881138
+Write summaries to ..\summaries\
+Global Step 17710 Step 550 Train Loss 1.0506239 Accuracy 0.98822546
+Write summaries to ..\summaries\
+Global Step 17760 Step 600 Train Loss 1.3205307 Accuracy 0.9861049
+Write summaries to ..\summaries\
+Global Step 17810 Step 650 Train Loss 0.99305105 Accuracy 0.9909598
+invalid argument
+Dev Accuracy 0.98331475 Step 0
+Dev Accuracy 0.9873884 Step 50
+Epoch 27 initialized.
+Global Step 17820 Step 0 Train Loss 1.2537305 Accuracy 0.9887277
+Write summaries to ..\summaries\
+Global Step 17870 Step 50 Train Loss 1.1021509 Accuracy 0.99029016
+Write summaries to ..\summaries\
+Global Step 17920 Step 100 Train Loss 1.1153376 Accuracy 0.98973215
+Write summaries to ..\summaries\
+Global Step 17970 Step 150 Train Loss 1.0643463 Accuracy 0.9892299
+Write summaries to ..\summaries\
+Global Step 18020 Step 200 Train Loss 1.0565188 Accuracy 0.98995537
+Write summaries to ..\summaries\
+Global Step 18070 Step 250 Train Loss 1.2935276 Accuracy 0.9867188
+Write summaries to ..\summaries\
+Global Step 18120 Step 300 Train Loss 1.1598318 Accuracy 0.98772323
+Write summaries to ..\summaries\
+Global Step 18170 Step 350 Train Loss 0.94367504 Accuracy 0.9905134
+Write summaries to ..\summaries\
+Global Step 18220 Step 400 Train Loss 1.1251059 Accuracy 0.98850447
+Write summaries to ..\summaries\
+Global Step 18270 Step 450 Train Loss 1.4453654 Accuracy 0.985212
+Write summaries to ..\summaries\
+Global Step 18320 Step 500 Train Loss 1.2533848 Accuracy 0.98688614
+Write summaries to ..\summaries\
+Global Step 18370 Step 550 Train Loss 1.3080446 Accuracy 0.9874442
+Write summaries to ..\summaries\
+Global Step 18420 Step 600 Train Loss 1.2613316 Accuracy 0.98800224
+Write summaries to ..\summaries\
+Global Step 18470 Step 650 Train Loss 1.252789 Accuracy 0.9876674
+invalid argument
+Epoch 28 initialized.
+Global Step 18480 Step 0 Train Loss 1.1179471 Accuracy 0.9870536
+Write summaries to ..\summaries\
+Global Step 18530 Step 50 Train Loss 1.1734452 Accuracy 0.98683035
+Write summaries to ..\summaries\
+Global Step 18580 Step 100 Train Loss 1.048877 Accuracy 0.9905692
+Write summaries to ..\summaries\
+Global Step 18630 Step 150 Train Loss 1.0734919 Accuracy 0.98945314
+Write summaries to ..\summaries\
+Global Step 18680 Step 200 Train Loss 1.322027 Accuracy 0.98716515
+Write summaries to ..\summaries\
+Global Step 18730 Step 250 Train Loss 1.2532172 Accuracy 0.98856026
+Write summaries to ..\summaries\
+Global Step 18780 Step 300 Train Loss 1.637121 Accuracy 0.9858817
+Write summaries to ..\summaries\
+Global Step 18830 Step 350 Train Loss 1.1006877 Accuracy 0.9895647
+Write summaries to ..\summaries\
+Global Step 18880 Step 400 Train Loss 1.0907211 Accuracy 0.9889509
+Write summaries to ..\summaries\
+Global Step 18930 Step 450 Train Loss 1.1136341 Accuracy 0.98816967
+Write summaries to ..\summaries\
+Global Step 18980 Step 500 Train Loss 1.150332 Accuracy 0.9898996
+Write summaries to ..\summaries\
+Global Step 19030 Step 550 Train Loss 1.0751033 Accuracy 0.9895089
+Write summaries to ..\summaries\
+Global Step 19080 Step 600 Train Loss 1.095897 Accuracy 0.98822546
+Write summaries to ..\summaries\
+Global Step 19130 Step 650 Train Loss 1.1683798 Accuracy 0.9876116
+invalid argument
+Dev Accuracy 0.9842634 Step 0
+Dev Accuracy 0.98498887 Step 50
+Epoch 29 initialized.
+Global Step 19140 Step 0 Train Loss 1.1369882 Accuracy 0.9876116
+Write summaries to ..\summaries\
+Global Step 19190 Step 50 Train Loss 0.890219 Accuracy 0.99174106
+Write summaries to ..\summaries\
+Global Step 19240 Step 100 Train Loss 1.2723463 Accuracy 0.98856026
+Write summaries to ..\summaries\
+Global Step 19290 Step 150 Train Loss 1.1659496 Accuracy 0.98856026
+Write summaries to ..\summaries\
+Global Step 19340 Step 200 Train Loss 1.2521791 Accuracy 0.98883927
+Write summaries to ..\summaries\
+Global Step 19390 Step 250 Train Loss 1.0133779 Accuracy 0.9901228
+Write summaries to ..\summaries\
+Global Step 19440 Step 300 Train Loss 1.1896465 Accuracy 0.9892857
+Write summaries to ..\summaries\
+Global Step 19490 Step 350 Train Loss 1.3778713 Accuracy 0.98716515
+Write summaries to ..\summaries\
+Global Step 19540 Step 400 Train Loss 1.1026802 Accuracy 0.98861605
+Write summaries to ..\summaries\
+Global Step 19590 Step 450 Train Loss 1.2271731 Accuracy 0.9891741
+Write summaries to ..\summaries\
+Global Step 19640 Step 500 Train Loss 1.2071142 Accuracy 0.9872768
+Write summaries to ..\summaries\
+Global Step 19690 Step 550 Train Loss 1.261208 Accuracy 0.98772323
+Write summaries to ..\summaries\
+Global Step 19740 Step 600 Train Loss 1.0456338 Accuracy 0.98973215
+Write summaries to ..\summaries\
+Global Step 19790 Step 650 Train Loss 1.0103796 Accuracy 0.9893415
+invalid argument
+
+Process finished with exit code 0
